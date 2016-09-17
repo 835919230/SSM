@@ -1,6 +1,7 @@
 package com.hc.web;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.*;
@@ -34,6 +35,9 @@ public class Bootstrap extends AbstractAnnotationConfigDispatcherServletInitiali
     @Override
     protected Filter[] getServletFilters() {
         CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter("utf-8");
+        DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy();
+        //true表明由ServletContext管理
+        delegatingFilterProxy.setTargetFilterLifecycle(true);
         return new Filter[]{encodingFilter};
     }
 

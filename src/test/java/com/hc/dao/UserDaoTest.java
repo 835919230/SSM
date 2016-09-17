@@ -37,6 +37,12 @@ public class UserDaoTest {
     }
 
     @Test
+    public void findByUsername() throws Exception {
+        User user = userDao.findByUsername("835919230");
+        logger.debug(user);
+    }
+
+    @Test
     public void insertOne() throws Exception {
         String salt = UUID.randomUUID().toString();
         byte[] bytes = ("123456789"+salt).getBytes();
@@ -48,6 +54,26 @@ public class UserDaoTest {
 
         int i = userDao.insertOne(user);
         Assert.assertTrue(i==0);
+    }
+
+    @Test
+    public void testPasswordEquals() {
+        User user = userDao.findByUsername("835919230");
+        String salt = user.getSalt();
+        byte[] bytes = ("123456789"+salt).getBytes();
+        String encodePassword = Base64.encode(bytes);
+
+        assertEquals(encodePassword,user.getPassword());
+    }
+
+    @Test
+    public void updatePassword() {
+        for (long i = 1001L; i <= 1003; i++) {
+            User user = userDao.findById(i);
+            String salt = user.getSalt();
+            String newPassword = new Md5Hash("123456789",salt).toString();
+            userDao.updatePassword(i,newPassword);
+        }
     }
 
 }

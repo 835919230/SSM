@@ -3,12 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace = "com.hc.dao.UserDao">
+
+    <sql id="cols">
+        sys_users.id,
+        sys_users.username,
+        sys_users.password,
+        sys_users.salt,
+        sys_users.locked
+    </sql>
+
     <select id="findById" parameterType="java.lang.Long" resultType="com.hc.model.User">
-        SELECT * FROM sys_users WHERE id = #{id}
+        SELECT <include refid="cols"/> FROM sys_users WHERE id = #{id}
+    </select>
+
+    <select id="findByUsername" parameterType="java.lang.String" resultType="com.hc.model.User">
+        SELECT <include refid="cols"/> FROM sys_users WHERE username = #{username}
     </select>
 
     <insert id="insertOne" parameterType="com.hc.model.User">
-        INSERT ignore INTO sys_users
+        INSERT ignore INTO sys_users( <include refid="cols"/> )
         VALUES (#{user.id},#{user.username},#{user.password},#{user.salt},#{user.locked})
     </insert>
+
+    <update id="updatePassword">
+        UPDATE sys_users SET password = #{password} WHERE id = #{id}
+    </update>
 </mapper>

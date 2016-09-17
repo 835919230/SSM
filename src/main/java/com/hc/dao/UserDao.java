@@ -11,5 +11,7 @@ import java.util.List;
  */
 public interface UserDao {
     User findById(@Param("id") long id);
+    User findByUsername(@Param("username")String username);
     int insertOne(@Param("user") User user);
+    int updatePassword(@Param("id") long id,@Param("password") String password);
 }

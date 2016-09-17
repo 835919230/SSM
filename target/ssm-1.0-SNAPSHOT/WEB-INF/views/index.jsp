@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <a href="/register">去注册</a>
-    <a href="/upload">上传文件</a>
+    <a href="/login/student">学生登录</a>
+    <a href="/login/teacher">老师登陆</a>
 </body>
 </html>

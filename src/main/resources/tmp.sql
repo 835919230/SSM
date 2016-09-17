@@ -16,8 +16,24 @@ FROM
   sys_permissions AS sp LEFT JOIN (SELECT sur.user_id,srp.permission_id FROM sys_users_roles AS sur LEFT JOIN sys_roles_permissions AS srp ON sur.role_id = srp.role_id)
     ON sp.id = srp.permissions_id;
 
-SELECT * FROM sys_permissions WHERE permission_id = (SELECT
+SELECT * FROM sys_permissions WHERE sys_permissions.id IN (SELECT
                srp.permission_id
              FROM sys_users_roles AS sur LEFT JOIN sys_roles_permissions AS srp
                  ON sur.role_id = srp.role_id
-             WHERE sur.user_id = 1001);
+             );
+
+SELECT sys_permissions.id,
+  sys_permissions.available,
+  sys_permissions.permission,
+  sys_permissions.description
+FROM
+  sys_permissions
+WHERE sys_permissions.id
+      IN (SELECT
+            sys_roles_permissions.permission_id
+          FROM sys_users_roles
+            LEFT JOIN
+            sys_roles_permissions
+              ON
+                sys_users_roles.role_id = sys_roles_permissions.role_id
+          WHERE sys_users_roles.user_id = 1001);

@@ -4,14 +4,19 @@ import com.hc.model.Permission;
 import com.hc.model.Role;
 import com.hc.model.User;
 import com.hc.service.UserService;
+import org.apache.log4j.Logger;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.springframework.stereotype.Component;
+
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 import javax.annotation.Resource;
 import java.util.HashSet;
@@ -20,7 +25,15 @@ import java.util.Set;
 /**
  * Created by 诚 on 2016/9/16.
  */
+@Component("userRealm")
 public class UserRealm extends AuthorizingRealm {
+
+    static Logger logger = Logger.getLogger(UserRealm.class);
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
 
     @Resource
     private UserService userService;
@@ -34,12 +47,12 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = principalCollection.getPrimaryPrincipal().toString();
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-        Set<Role> roles = userService.findUserRoles(userService.findUser(username));
+        Set<Role> roles = userService.findUserRoles(username);
         Set<String> roleNames = new HashSet<>();
         for (Role role : roles) {
             roleNames.add(role.getRole());
         }
-        Set<Permission> permissions = userService.findUserPermissions(roles);
+        Set<Permission> permissions = userService.findUserPermissions(username);
         info.setRoles(roleNames);
         Set<String> perNames = new HashSet<>();
         for (Permission p : permissions) {
@@ -58,11 +71,21 @@ public class UserRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         String username = token.getPrincipal().toString();
-        String password = token.getCredentials().toString();
+        String password = new String((char[]) token.getCredentials());
         User user = userService.findUser(username);
+        logger.debug("登录的密码"+password);
         if (user != null) {
-            AuthenticationInfo info = new SimpleAuthenticationInfo(username, password, "realm");
-            return info;
+            logger.debug("进入这里了！");
+            String salt = user.getSalt();
+            String encodePassword = new Md5Hash(password,user.getSalt()).toString();
+            logger.debug(encodePassword);
+            if (user.getPassword().equals(encodePassword)) {
+                logger.debug("验证正确");
+                SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username, password, getName());
+                String passwordAgain = info.getCredentials().toString();
+                logger.debug("相等？:"+String.valueOf(encodePassword.equals(passwordAgain)));
+                return info;
+            }
         }
         return null;
     }

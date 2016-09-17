@@ -1,15 +1,22 @@
 package com.hc.web;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.hc.realm.UserRealm;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbcp2.datasources.PerUserPoolDataSource;
 import org.apache.commons.dbcp2.datasources.SharedPoolDataSource;
 import org.apache.log4j.Logger;
 import org.apache.shiro.session.mgt.DefaultSessionManager;
+import org.apache.shiro.spring.LifecycleBeanPostProcessor;
+import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
+import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
+import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.servlet.ShiroFilter;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
+import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
@@ -27,6 +34,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by 诚 on 2016/9/13.
@@ -35,6 +44,7 @@ import java.beans.PropertyVetoException;
 @ComponentScan(basePackages = {"com.hc"},
         excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class)})
 //@PropertySource("classpath:datasource.properties")
+@Import(ShiroConfig.class)
 @EnableAspectJAutoProxy
 @EnableTransactionManagement(proxyTargetClass = true)
 public class RootConfig {

@@ -12,7 +12,7 @@ import java.util.Set;
 public interface UserService {
     User findUser(String username);
 
-    Set<Role> findUserRoles(User user);
+    Set<Role> findUserRoles(String username);
 
-    Set<Permission> findUserPermissions(Set<Role> roles);
+    Set<Permission> findUserPermissions(String username);
 }
