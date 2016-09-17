@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hc.dao.PermissionDao">
+    <select id="findPermissionByRole" parameterType="java.lang.Long" resultType="com.hc.model.Permission">
+        SELECT
+          sys_permissions.id,
+          sys_permissions.permission,
+          sys_permissions.description,
+          sys_permissions.available
+        FROM
+          sys_permissions
+        LEFT JOIN
+          sys_roles_permissions
+        ON
+          sys_permissions.id = sys_roles_permissions.permission_id
+        WHERE
+          sys_roles_permissions.role_id = #{role_id}
+    </select>
+
+    <select id="findPermissionByUser" parameterType="com.hc.model.User" resultType="com.hc.model.Permission">
+        SELECT
+          sys_permissions.id,
+          sys_permissions.permission,
+          sys_permissions.description,
+          sys_permissions.available
+        FROM
+          sys_permissions LEFT JOIN (SELECT * FROM sys_users_roles LEFT JOIN sys_roles_permissions ON sys_users_roles.role_id = sys_roles_permissions.role_id)
+          ON sys_permissions.id = sys_users_roles.permission_id
+        WHERE sys_users.id = #{user.id}
+    </select>
+</mapper>

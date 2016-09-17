@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "com.hc.dao.UserDao">
+    <select id="findById" parameterType="java.lang.Long" resultType="com.hc.model.User">
+        SELECT * FROM sys_users WHERE id = #{id}
+    </select>
+
+    <insert id="insertOne" parameterType="com.hc.model.User">
+        INSERT ignore INTO sys_users
+        VALUES (#{user.id},#{user.username},#{user.password},#{user.salt},#{user.locked})
+    </insert>
+</mapper>

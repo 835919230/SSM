@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - shiro@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="shiro">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="db1">
+      <visible>1</visible>
+    </schema>
+    <schema id="3" name="hc"/>
+    <schema id="4" name="information_schema"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="sakila">
+      <visible>1</visible>
+    </schema>
+    <schema id="8" name="seckill"/>
+    <schema id="9" name="sys"/>
+    <schema id="10" name="world"/>
+    <table id="11" parent="1" name="sys_roles_permissions"/>
+    <table id="12" parent="1" name="sys_permissions"/>
+    <table id="13" parent="1" name="sys_roles"/>
+    <table id="14" parent="1" name="sys_users"/>
+    <table id="15" parent="1" name="sys_users_roles"/>
+    <table id="16" parent="2" name="goods"/>
+    <table id="17" parent="2" name="user"/>
+    <table id="18" parent="2" name="user_goods"/>
+    <table id="19" parent="7" name="actor"/>
+    <table id="20" parent="7" name="address"/>
+    <table id="21" parent="7" name="category"/>
+    <table id="22" parent="7" name="city"/>
+    <table id="23" parent="7" name="country"/>
+    <table id="24" parent="7" name="customer"/>
+    <table id="25" parent="7" name="film"/>
+    <table id="26" parent="7" name="film_actor"/>
+    <table id="27" parent="7" name="film_category"/>
+    <table id="28" parent="7" name="film_text"/>
+    <table id="29" parent="7" name="inventory"/>
+    <table id="30" parent="7" name="language"/>
+    <table id="31" parent="7" name="payment"/>
+    <table id="32" parent="7" name="rental"/>
+    <table id="33" parent="7" name="staff"/>
+    <table id="34" parent="7" name="store"/>
+    <view id="35" parent="7" name="actor_info">
+      <comment>VIEW</comment>
+    </view>
+    <view id="36" parent="7" name="customer_list">
+      <comment>VIEW</comment>
+    </view>
+    <view id="37" parent="7" name="film_list">
+      <comment>VIEW</comment>
+    </view>
+    <view id="38" parent="7" name="nicer_but_slower_film_list">
+      <comment>VIEW</comment>
+    </view>
+    <view id="39" parent="7" name="sales_by_film_category">
+      <comment>VIEW</comment>
+    </view>
+    <view id="40" parent="7" name="sales_by_store">
+      <comment>VIEW</comment>
+    </view>
+    <view id="41" parent="7" name="staff_list">
+      <comment>VIEW</comment>
+    </view>
+    <routine id="42" parent="7" name="film_in_stock">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="43" parent="7" name="film_not_in_stock">
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <routine id="44" parent="7" name="get_customer_balance">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="45" parent="7" name="inventory_held_by_customer">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="46" parent="7" name="inventory_in_stock">
+      <routine-kind>FUNCTION</routine-kind>
+    </routine>
+    <routine id="47" parent="7" name="rewards_report">
+      <comment>Provides a customizable report on best customers</comment>
+      <routine-kind>PROCEDURE</routine-kind>
+    </routine>
+    <column id="48" parent="11" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="49" parent="11" name="permission_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="50" parent="11" name="PRIMARY">
+      <columns>role_id
+permission_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="51" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="52" parent="12" name="permission">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="53" parent="12" name="description">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="54" parent="12" name="available">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="55" parent="12" name="idx_sys_permissions_permission">
+      <columns>permission</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="56" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="57" parent="12" name="idx_sys_permissions_permission">
+      <columns>permission</columns>
+      <underlying-index>idx_sys_permissions_permission</underlying-index>
+    </key>
+    <column id="58" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="59" parent="13" name="role">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="60" parent="13" name="description">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="61" parent="13" name="available">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="62" parent="13" name="idx_sys_roles_role">
+      <columns>role</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="63" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="64" parent="13" name="idx_sys_roles_role">
+      <columns>role</columns>
+      <underlying-index>idx_sys_roles_role</underlying-index>
+    </key>
+    <column id="65" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="66" parent="14" name="username">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="67" parent="14" name="password">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="68" parent="14" name="salt">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="69" parent="14" name="locked">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="70" parent="14" name="idx_sys_users_username">
+      <columns>username</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="71" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="72" parent="14" name="idx_sys_users_username">
+      <columns>username</columns>
+      <underlying-index>idx_sys_users_username</underlying-index>
+    </key>
+    <column id="73" parent="15" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="74" parent="15" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <key id="75" parent="15" name="PRIMARY">
+      <columns>user_id
+role_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="76" parent="16" name="gid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="77" parent="16" name="gname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="78" parent="16" name="number">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="79" parent="16" name="cost">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="80" parent="16" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="81" parent="16" name="FKglqrwf2hm6bj7skpadm6u4v76">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="82" parent="16" name="PRIMARY">
+      <columns>gid</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="83" parent="16" name="FKglqrwf2hm6bj7skpadm6u4v76">
+      <columns>user_id</columns>
+      <ref-key>~.user.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="84" parent="16" name="goods_ibfk_1">
+      <columns>user_id</columns>
+      <ref-key>~.user.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="85" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="86" parent="17" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="87" parent="17" name="account">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="88" parent="17" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <index id="89" parent="17" name="idx_account">
+      <columns>account</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="90" parent="17" name="idx_password">
+      <columns>password</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="91" parent="17" name="idx_username">
+      <columns>username</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="92" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="93" parent="17" name="idx_account">
+      <columns>account</columns>
+      <underlying-index>idx_account</underlying-index>
+    </key>
+    <column id="94" parent="18" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="95" parent="18" name="goodses_gid">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="96" parent="18" name="FK_a35ailqpf9yk3r3yfm52wig0u">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="97" parent="18" name="FK_pwqg39bndse0qimpt9yusu3gc">
+      <columns>goodses_gid</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="98" parent="18" name="UK_pwqg39bndse0qimpt9yusu3gc">
+      <columns>goodses_gid</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="99" parent="18" name="PRIMARY">
+      <columns>user_id
+goodses_gid</columns>
+      <primary>1</primary>
+    </key>
+    <key id="100" parent="18" name="UK_pwqg39bndse0qimpt9yusu3gc">
+      <columns>goodses_gid</columns>
+      <underlying-index>UK_pwqg39bndse0qimpt9yusu3gc</underlying-index>
+    </key>
+    <foreign-key id="101" parent="18" name="FK_a35ailqpf9yk3r3yfm52wig0u">
+      <columns>user_id</columns>
+      <ref-key>~.user.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="102" parent="18" name="FK_pwqg39bndse0qimpt9yusu3gc">
+      <columns>goodses_gid</columns>
+      <ref-key>~.goods.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="103" parent="19" name="actor_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="104" parent="19" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="105" parent="19" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="106" parent="19" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="107" parent="19" name="idx_actor_last_name">
+      <columns>last_name</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="108" parent="19" name="PRIMARY">
+      <columns>actor_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="109" parent="20" name="address_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="110" parent="20" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="111" parent="20" name="address2">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="112" parent="20" name="district">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="113" parent="20" name="city_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="114" parent="20" name="postal_code">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="115" parent="20" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="116" parent="20" name="location">
+      <mandatory>1</mandatory>
+      <data-type>geometry|0</data-type>
+    </column>
+    <column id="117" parent="20" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="118" parent="20" name="idx_fk_city_id">
+      <columns>city_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="119" parent="20" name="idx_location">
+      <columns>location</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="120" parent="20" name="PRIMARY">
+      <columns>address_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="121" parent="20" name="fk_address_city">
+      <columns>city_id</columns>
+      <ref-key>~.city.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="122" parent="21" name="category_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="123" parent="21" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="124" parent="21" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="125" parent="21" name="PRIMARY">
+      <columns>category_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="126" parent="22" name="city_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="127" parent="22" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="128" parent="22" name="country_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="129" parent="22" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="130" parent="22" name="idx_fk_country_id">
+      <columns>country_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="131" parent="22" name="PRIMARY">
+      <columns>city_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="132" parent="22" name="fk_city_country">
+      <columns>country_id</columns>
+      <ref-key>~.country.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="133" parent="23" name="country_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="134" parent="23" name="country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="135" parent="23" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="136" parent="23" name="PRIMARY">
+      <columns>country_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="137" parent="24" name="customer_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="138" parent="24" name="store_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="139" parent="24" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="140" parent="24" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="141" parent="24" name="email">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="142" parent="24" name="address_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="143" parent="24" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="144" parent="24" name="create_date">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="145" parent="24" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="146" parent="24" name="idx_fk_address_id">
+      <columns>address_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="147" parent="24" name="idx_fk_store_id">
+      <columns>store_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="148" parent="24" name="idx_last_name">
+      <columns>last_name</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="149" parent="24" name="PRIMARY">
+      <columns>customer_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="150" parent="24" name="fk_customer_store">
+      <columns>store_id</columns>
+      <ref-key>~.store.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="151" parent="24" name="fk_customer_address">
+      <columns>address_id</columns>
+      <ref-key>~.address.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="152" parent="24" name="customer_create_date">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="153" parent="25" name="film_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="154" parent="25" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="155" parent="25" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="156" parent="25" name="release_year">
+      <data-type>year(4)|0</data-type>
+    </column>
+    <column id="157" parent="25" name="language_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="158" parent="25" name="original_language_id">
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="159" parent="25" name="rental_duration">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;3&apos;</default-expression>
+    </column>
+    <column id="160" parent="25" name="rental_rate">
+      <mandatory>1</mandatory>
+      <data-type>decimal(4,2)|0</data-type>
+      <default-expression>&apos;4.99&apos;</default-expression>
+    </column>
+    <column id="161" parent="25" name="length">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="162" parent="25" name="replacement_cost">
+      <mandatory>1</mandatory>
+      <data-type>decimal(5,2)|0</data-type>
+      <default-expression>&apos;19.99&apos;</default-expression>
+    </column>
+    <column id="163" parent="25" name="rating">
+      <data-type>enum(&apos;G&apos;, &apos;PG&apos;, &apos;PG-13&apos;, &apos;R&apos;, &apos;NC-17&apos;)|0</data-type>
+      <default-expression>&apos;G&apos;</default-expression>
+    </column>
+    <column id="164" parent="25" name="special_features">
+      <data-type>set(&apos;Trailers&apos;, &apos;Commentaries&apos;, &apos;Deleted Scenes&apos;, &apos;Behind the Scenes&apos;)|0</data-type>
+    </column>
+    <column id="165" parent="25" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="166" parent="25" name="idx_fk_language_id">
+      <columns>language_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="167" parent="25" name="idx_fk_original_language_id">
+      <columns>original_language_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="168" parent="25" name="idx_title">
+      <columns>title</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="169" parent="25" name="PRIMARY">
+      <columns>film_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="170" parent="25" name="fk_film_language">
+      <columns>language_id</columns>
+      <ref-key>~.language.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="171" parent="25" name="fk_film_language_original">
+      <columns>original_language_id</columns>
+      <ref-key>~.language.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="172" parent="25" name="ins_film">
+      <trig-events>I</trig-events>
+      <trig-turn>AFTER_ROW</trig-turn>
+    </trigger>
+    <trigger id="173" parent="25" name="upd_film">
+      <trig-events>U</trig-events>
+      <trig-turn>AFTER_ROW</trig-turn>
+    </trigger>
+    <trigger id="174" parent="25" name="del_film">
+      <trig-events>D</trig-events>
+      <trig-turn>AFTER_ROW</trig-turn>
+    </trigger>
+    <column id="175" parent="26" name="actor_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="176" parent="26" name="film_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="177" parent="26" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="178" parent="26" name="idx_fk_film_id">
+      <columns>film_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="179" parent="26" name="PRIMARY">
+      <columns>actor_id
+film_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="180" parent="26" name="fk_film_actor_actor">
+      <columns>actor_id</columns>
+      <ref-key>~.actor.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="181" parent="26" name="fk_film_actor_film">
+      <columns>film_id</columns>
+      <ref-key>~.film.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="182" parent="27" name="film_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="183" parent="27" name="category_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="184" parent="27" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="185" parent="27" name="fk_film_category_category">
+      <columns>category_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="186" parent="27" name="PRIMARY">
+      <columns>film_id
+category_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="187" parent="27" name="fk_film_category_film">
+      <columns>film_id</columns>
+      <ref-key>~.film.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="188" parent="27" name="fk_film_category_category">
+      <columns>category_id</columns>
+      <ref-key>~.category.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="189" parent="28" name="film_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(6)|0</data-type>
+    </column>
+    <column id="190" parent="28" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="191" parent="28" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="192" parent="28" name="idx_title_description">
+      <columns>title
+description</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="193" parent="28" name="PRIMARY">
+      <columns>film_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="194" parent="29" name="inventory_id">
+      <mandatory>1</mandatory>
+      <data-type>mediumint(8) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="195" parent="29" name="film_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="196" parent="29" name="store_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="197" parent="29" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="198" parent="29" name="idx_fk_film_id">
+      <columns>film_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="199" parent="29" name="idx_store_id_film_id">
+      <columns>store_id
+film_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="200" parent="29" name="PRIMARY">
+      <columns>inventory_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="201" parent="29" name="fk_inventory_film">
+      <columns>film_id</columns>
+      <ref-key>~.film.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="202" parent="29" name="fk_inventory_store">
+      <columns>store_id</columns>
+      <ref-key>~.store.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="203" parent="30" name="language_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="204" parent="30" name="name">
+      <mandatory>1</mandatory>
+      <data-type>char(20)|0</data-type>
+    </column>
+    <column id="205" parent="30" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="206" parent="30" name="PRIMARY">
+      <columns>language_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="207" parent="31" name="payment_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="208" parent="31" name="customer_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="209" parent="31" name="staff_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="210" parent="31" name="rental_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="211" parent="31" name="amount">
+      <mandatory>1</mandatory>
+      <data-type>decimal(5,2)|0</data-type>
+    </column>
+    <column id="212" parent="31" name="payment_date">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="213" parent="31" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="214" parent="31" name="fk_payment_rental">
+      <columns>rental_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="215" parent="31" name="idx_fk_customer_id">
+      <columns>customer_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="216" parent="31" name="idx_fk_staff_id">
+      <columns>staff_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="217" parent="31" name="PRIMARY">
+      <columns>payment_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="218" parent="31" name="fk_payment_customer">
+      <columns>customer_id</columns>
+      <ref-key>~.customer.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="219" parent="31" name="fk_payment_staff">
+      <columns>staff_id</columns>
+      <ref-key>~.staff.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="220" parent="31" name="fk_payment_rental">
+      <columns>rental_id</columns>
+      <ref-key>~.rental.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="221" parent="31" name="payment_date">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="222" parent="32" name="rental_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="223" parent="32" name="rental_date">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="224" parent="32" name="inventory_id">
+      <mandatory>1</mandatory>
+      <data-type>mediumint(8) unsigned|0</data-type>
+    </column>
+    <column id="225" parent="32" name="customer_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="226" parent="32" name="return_date">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="227" parent="32" name="staff_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="228" parent="32" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="229" parent="32" name="idx_fk_customer_id">
+      <columns>customer_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="230" parent="32" name="idx_fk_inventory_id">
+      <columns>inventory_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="231" parent="32" name="idx_fk_staff_id">
+      <columns>staff_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="232" parent="32" name="rental_date">
+      <columns>rental_date
+inventory_id
+customer_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="233" parent="32" name="PRIMARY">
+      <columns>rental_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="234" parent="32" name="rental_date">
+      <columns>rental_date
+inventory_id
+customer_id</columns>
+      <underlying-index>rental_date</underlying-index>
+    </key>
+    <foreign-key id="235" parent="32" name="fk_rental_inventory">
+      <columns>inventory_id</columns>
+      <ref-key>~.inventory.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="236" parent="32" name="fk_rental_customer">
+      <columns>customer_id</columns>
+      <ref-key>~.customer.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="237" parent="32" name="fk_rental_staff">
+      <columns>staff_id</columns>
+      <ref-key>~.staff.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="238" parent="32" name="rental_date">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="239" parent="33" name="staff_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="240" parent="33" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="241" parent="33" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="242" parent="33" name="address_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="243" parent="33" name="picture">
+      <data-type>blob|0</data-type>
+    </column>
+    <column id="244" parent="33" name="email">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="245" parent="33" name="store_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="246" parent="33" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="247" parent="33" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <column id="248" parent="33" name="password">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="249" parent="33" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="250" parent="33" name="idx_fk_address_id">
+      <columns>address_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="251" parent="33" name="idx_fk_store_id">
+      <columns>store_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="252" parent="33" name="PRIMARY">
+      <columns>staff_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="253" parent="33" name="fk_staff_address">
+      <columns>address_id</columns>
+      <ref-key>~.address.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="254" parent="33" name="fk_staff_store">
+      <columns>store_id</columns>
+      <ref-key>~.store.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="255" parent="34" name="store_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="256" parent="34" name="manager_staff_id">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="257" parent="34" name="address_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="258" parent="34" name="last_update">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="259" parent="34" name="idx_fk_address_id">
+      <columns>address_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="260" parent="34" name="idx_unique_manager">
+      <columns>manager_staff_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="261" parent="34" name="PRIMARY">
+      <columns>store_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="262" parent="34" name="idx_unique_manager">
+      <columns>manager_staff_id</columns>
+      <underlying-index>idx_unique_manager</underlying-index>
+    </key>
+    <foreign-key id="263" parent="34" name="fk_store_staff">
+      <columns>manager_staff_id</columns>
+      <ref-key>~.staff.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="264" parent="34" name="fk_store_address">
+      <columns>address_id</columns>
+      <ref-key>~.address.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="265" parent="35" name="actor_id">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="266" parent="35" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="267" parent="35" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="268" parent="35" name="film_info">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="269" parent="36" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="270" parent="36" name="name">
+      <data-type>varchar(91)|0</data-type>
+    </column>
+    <column id="271" parent="36" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="272" parent="36" name="zip code">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="273" parent="36" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="274" parent="36" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="275" parent="36" name="country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="276" parent="36" name="notes">
+      <mandatory>1</mandatory>
+      <data-type>varchar(6)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="277" parent="36" name="SID">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <column id="278" parent="37" name="FID">
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="279" parent="37" name="title">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="280" parent="37" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="281" parent="37" name="category">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="282" parent="37" name="price">
+      <data-type>decimal(4,2)|0</data-type>
+      <default-expression>&apos;4.99&apos;</default-expression>
+    </column>
+    <column id="283" parent="37" name="length">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="284" parent="37" name="rating">
+      <data-type>enum(&apos;G&apos;, &apos;PG&apos;, &apos;PG-13&apos;, &apos;R&apos;, &apos;NC-17&apos;)|0</data-type>
+      <default-expression>&apos;G&apos;</default-expression>
+    </column>
+    <column id="285" parent="37" name="actors">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="286" parent="38" name="FID">
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="287" parent="38" name="title">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="288" parent="38" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="289" parent="38" name="category">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="290" parent="38" name="price">
+      <data-type>decimal(4,2)|0</data-type>
+      <default-expression>&apos;4.99&apos;</default-expression>
+    </column>
+    <column id="291" parent="38" name="length">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="292" parent="38" name="rating">
+      <data-type>enum(&apos;G&apos;, &apos;PG&apos;, &apos;PG-13&apos;, &apos;R&apos;, &apos;NC-17&apos;)|0</data-type>
+      <default-expression>&apos;G&apos;</default-expression>
+    </column>
+    <column id="293" parent="38" name="actors">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="294" parent="39" name="category">
+      <mandatory>1</mandatory>
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <column id="295" parent="39" name="total_sales">
+      <data-type>decimal(27,2)|0</data-type>
+    </column>
+    <column id="296" parent="40" name="store">
+      <data-type>varchar(101)|0</data-type>
+    </column>
+    <column id="297" parent="40" name="manager">
+      <data-type>varchar(91)|0</data-type>
+    </column>
+    <column id="298" parent="40" name="total_sales">
+      <data-type>decimal(27,2)|0</data-type>
+    </column>
+    <column id="299" parent="41" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="300" parent="41" name="name">
+      <data-type>varchar(91)|0</data-type>
+    </column>
+    <column id="301" parent="41" name="address">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="302" parent="41" name="zip code">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="303" parent="41" name="phone">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="304" parent="41" name="city">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="305" parent="41" name="country">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="306" parent="41" name="SID">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </column>
+    <argument id="307" parent="42" name="p_film_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="308" parent="42" name="p_store_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="309" parent="42" name="p_film_count">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="310" parent="43" name="p_film_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="311" parent="43" name="p_store_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="312" parent="43" name="p_film_count">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="313" parent="44">
+      <direction>RETURN</direction>
+      <data-type>decimal(5,2)|0</data-type>
+    </argument>
+    <argument id="314" parent="44" name="p_customer_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="315" parent="44" name="p_effective_date">
+      <direction>IN</direction>
+      <data-type>datetime|0</data-type>
+    </argument>
+    <argument id="316" parent="45">
+      <direction>RETURN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="317" parent="45" name="p_inventory_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="318" parent="46">
+      <direction>RETURN</direction>
+      <data-type>tinyint(1)|0</data-type>
+    </argument>
+    <argument id="319" parent="46" name="p_inventory_id">
+      <direction>IN</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+    <argument id="320" parent="47" name="min_monthly_purchases">
+      <direction>IN</direction>
+      <data-type>tinyint(3) unsigned|0</data-type>
+    </argument>
+    <argument id="321" parent="47" name="min_dollar_amount_purchased">
+      <direction>IN</direction>
+      <data-type>decimal(10,2) unsigned|0</data-type>
+    </argument>
+    <argument id="322" parent="47" name="count_rewardees">
+      <direction>OUT</direction>
+      <data-type>int(11)|0</data-type>
+    </argument>
+  </database-model>
+</dataSource>
