@@ -29,7 +29,7 @@ public class ShiroConfig {
         return defaultWebSecurityManager;
     }
 
-    @Bean
+    @Bean(name = "shiroFilter")
     public ShiroFilterFactoryBean shiroFilter() {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
         shiroFilter.setSecurityManager(defaultWebSecurityManager());
@@ -62,10 +62,10 @@ public class ShiroConfig {
         return authorizationAttributeSourceAdvisor;
     }
 
-//    @Bean
+//    @Bean()
 //    public DelegatingFilterProxy delegatingFilterProxy() {
 //        DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy();
-//                delegatingFilterProxy.setTargetFilterLifecycle(true);
+//        delegatingFilterProxy.setTargetFilterLifecycle(true);
 //        return delegatingFilterProxy;
 //    }
 }

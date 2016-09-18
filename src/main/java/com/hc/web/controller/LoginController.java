@@ -65,7 +65,7 @@ public class LoginController {
             subject.login(token);
             return "redirect:/admin/student";
         } catch (AuthenticationException e) {
-            e.printStackTrace();
+            logger.error(e);
             model.addAttribute("type","student")
                 .addAttribute("error","用户名或密码不对");
         }
@@ -76,6 +76,9 @@ public class LoginController {
     public String loginTeacher(@RequestParam("username") String username,
                                @RequestParam("password") String password,
                                Model model) {
+        String rel = loginStudent(username, password, model);
+        if (!rel.equals("login"))
+            return "redirect:/admin/student";
         model.addAttribute("type","teacher");
         return "login";
     }
@@ -84,6 +87,9 @@ public class LoginController {
     public String loginManager(@RequestParam("username") String username,
                                @RequestParam("password") String password,
                                Model model) {
+        String rel = loginStudent(username, password, model);
+        if (!rel.equals("login"))
+            return "redirect:/admin/student";
         model.addAttribute("type","manager");
         return "login";
     }

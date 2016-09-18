@@ -1,5 +1,6 @@
 package com.hc.web;
 
+import org.apache.shiro.web.servlet.ShiroFilter;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -38,11 +39,14 @@ public class Bootstrap extends AbstractAnnotationConfigDispatcherServletInitiali
         DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy();
         //true表明由ServletContext管理
         delegatingFilterProxy.setTargetFilterLifecycle(true);
-        return new Filter[]{encodingFilter};
+        //这一步在不用web.xml的情况下必不可少，表示我们要对实现了ShiroFilterFactoryBean的Bean类进行代理
+        delegatingFilterProxy.setTargetBeanName("shiroFilter");
+        return new Filter[]{delegatingFilterProxy,encodingFilter};
     }
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         super.onStartup(servletContext);
+        servletContext.addFilter("shiroFilter",DelegatingFilterProxy.class);
     }
 }
