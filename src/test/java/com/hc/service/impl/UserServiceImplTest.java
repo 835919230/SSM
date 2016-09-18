@@ -47,4 +47,16 @@ public class UserServiceImplTest {
         logger.debug(userPermissions);
     }
 
+    @Test
+    public void findUserRoleNames() throws Exception {
+        Set<String> roles = userService.findUserRoleNames("835919230");
+        logger.debug(roles);
+    }
+
+    @Test
+    public void findUserPermissionNames() throws Exception {
+        Set<String> userPermissions = userService.findUserPermissionNames("835919230");
+        logger.debug(userPermissions);
+    }
+
 }

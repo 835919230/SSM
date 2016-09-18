@@ -19,7 +19,7 @@
           sys_roles_permissions.role_id = #{role_id}
     </select>
 
-    <select id="findPermissionByUser" parameterType="com.hc.model.User" resultType="com.hc.model.Permission">
+    <select id="findPermissionByUser" parameterType="java.lang.Long" resultType="com.hc.model.Permission">
         SELECT sys_permissions.id,
                 sys_permissions.available,
                 sys_permissions.permission,
@@ -34,6 +34,22 @@
                   sys_roles_permissions
                   ON
                     sys_users_roles.role_id = sys_roles_permissions.role_id
-                  WHERE sys_users_roles.user_id = 1001)
+                  WHERE sys_users_roles.user_id = #{user_id})
+    </select>
+
+    <select id="findPermissionNameByUserId" parameterType="java.lang.Long" resultType="java.lang.String">
+        SELECT
+          sys_permissions.permission
+        FROM
+          sys_permissions
+        WHERE sys_permissions.id
+        IN (SELECT
+          sys_roles_permissions.permission_id
+        FROM sys_users_roles
+        LEFT JOIN
+          sys_roles_permissions
+        ON
+          sys_users_roles.role_id = sys_roles_permissions.role_id
+        WHERE sys_users_roles.user_id = #{user_id})
     </select>
 </mapper>

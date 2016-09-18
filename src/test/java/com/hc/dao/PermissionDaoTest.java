@@ -25,7 +25,7 @@ public class PermissionDaoTest {
     Logger logger = Logger.getLogger(PermissionDaoTest.class);
 
     @Resource
-    PermissionDao permissionDao;
+    private PermissionDao permissionDao;
 
     @Test
     public void findPermissionByRole() throws Exception {
@@ -40,6 +40,14 @@ public class PermissionDaoTest {
         Set<Permission> permissions = permissionDao.findPermissionByUser(1001L);
         for (Permission permission : permissions) {
             logger.debug(permission);
+        }
+    }
+
+    @Test
+    public void findPermissionNameByUserId() throws Exception {
+        Set<String> permissionNames = permissionDao.findPermissionNameByUserId(1001L);
+        for (String permission : permissionNames) {
+            logger.debug("name:"+permission);
         }
     }
 

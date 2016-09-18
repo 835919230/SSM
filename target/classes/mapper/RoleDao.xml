@@ -30,4 +30,12 @@
                                 ON sys_users_roles.role_id = sys_roles.id
                                 WHERE sys_users_roles.user_id = #{userId}
     </select>
+
+    <select id="listRoleName" parameterType="java.lang.Long" resultType="java.lang.String">
+        SELECT
+        sys_roles.role
+        FROM sys_roles LEFT JOIN sys_users_roles
+        ON sys_users_roles.role_id = sys_roles.id
+        WHERE sys_users_roles.user_id = #{userId}
+    </select>
 </mapper>

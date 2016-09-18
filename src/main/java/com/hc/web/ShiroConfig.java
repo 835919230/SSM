@@ -61,7 +61,7 @@ public class ShiroConfig {
         authorizationAttributeSourceAdvisor.setSecurityManager(defaultWebSecurityManager());
         return authorizationAttributeSourceAdvisor;
     }
-
+//      危险，不要这么做
 //    @Bean()
 //    public DelegatingFilterProxy delegatingFilterProxy() {
 //        DelegatingFilterProxy delegatingFilterProxy = new DelegatingFilterProxy();

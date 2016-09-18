@@ -24,7 +24,7 @@ public class RoleDaoTest {
     static Logger logger = Logger.getLogger(RoleDaoTest.class);
 
     @Resource
-    RoleDao roleDao;
+    private RoleDao roleDao;
 
     @Test
     public void findRole() throws Exception {
@@ -38,11 +38,13 @@ public class RoleDaoTest {
         logger.debug(student);
     }
 
+
     @Test
-    public void listRole() throws Exception {
-        Set<Role> roles = roleDao.listRole(1001L);
-        for (Role role : roles)
-            logger.debug(role);
+    public void listRoleName() throws Exception {
+        Set<String> roleNames = roleDao.listRoleName(1001L);
+        for (String role : roleNames)
+            logger.debug("name:"+role);
     }
+
 
 }

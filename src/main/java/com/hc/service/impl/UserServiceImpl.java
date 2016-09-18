@@ -18,7 +18,6 @@ import java.util.Set;
  * Created by 诚 on 2016/9/17.
  */
 @Service("userService")
-@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -31,6 +30,7 @@ public class UserServiceImpl implements UserService {
     private PermissionDao permissionDao;
 
     @Override
+    @Transactional(readOnly = true)
     public User findUser(String username) {
         if (username == null || "".equals(username))
             return null;
@@ -39,6 +39,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Set<Role> findUserRoles(String username) {
         if (username == null || "".equals(username))
             return new HashSet<>(0);
@@ -48,11 +49,32 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public Set<Permission> findUserPermissions(String username) {
         if (username == null || "".equals(username.trim()))
             return new HashSet<>(0);
         User user = userDao.findByUsername(username);
         Set<Permission> permissions = permissionDao.findPermissionByUser(user.getId());
         return permissions;
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Set<String> findUserRoleNames(String username) {
+        if (username == null || "".equals(username))
+            return new HashSet<>(0);
+        User user = userDao.findByUsername(username);
+        Set<String> roleNames = roleDao.listRoleName(user.getId());
+        return roleNames;
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Set<String> findUserPermissionNames(String username) {
+        if (username == null || "".equals(username))
+            return new HashSet<>(0);
+        User user = userDao.findByUsername(username);
+        Set<String> permissionNames = permissionDao.findPermissionNameByUserId(user.getId());
+        return permissionNames;
     }
 }

@@ -13,4 +13,6 @@ public interface PermissionDao {
 
     //通过left join查询
     Set<Permission> findPermissionByUser(long user_id);
+
+    Set<String> findPermissionNameByUserId(long user_id);
 }

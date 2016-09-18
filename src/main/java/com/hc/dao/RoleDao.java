@@ -12,4 +12,6 @@ public interface RoleDao {
     Role findRoleById(@Param("id") long id);
     Role findRoleByRole(String roleName);
     Set<Role> listRole(long userId);
+
+    Set<String> listRoleName(long userId);
 }

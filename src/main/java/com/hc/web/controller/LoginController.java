@@ -63,6 +63,8 @@ public class LoginController {
         try {
             logger.debug(token.getCredentials().toString());
             subject.login(token);
+            subject.getSession(true).setAttribute("username",subject.getPrincipal().toString());
+            subject.isAuthenticated();
             return "redirect:/admin/student";
         } catch (AuthenticationException e) {
             logger.error(e);

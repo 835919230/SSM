@@ -46,7 +46,7 @@ import java.util.Map;
 //@PropertySource("classpath:datasource.properties")
 @Import(ShiroConfig.class)
 @EnableAspectJAutoProxy
-@EnableTransactionManagement(proxyTargetClass = true)
+@EnableTransactionManagement
 public class RootConfig {
 //    @Autowired
 //    private Environment env;

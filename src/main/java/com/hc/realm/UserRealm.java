@@ -47,20 +47,13 @@ public class UserRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         String username = principalCollection.getPrimaryPrincipal().toString();
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-        Set<Role> roles = userService.findUserRoles(username);
-        Set<String> roleNames = new HashSet<>();
-        for (Role role : roles) {
-            roleNames.add(role.getRole());
-        }
-        Set<Permission> permissions = userService.findUserPermissions(username);
+        Set<String> roleNames = userService.findUserRoleNames(username);
         info.setRoles(roleNames);
-        Set<String> perNames = new HashSet<>();
-        for (Permission p : permissions) {
-            perNames.add(p.getPermissionName());
-        }
+        Set<String> perNames = userService.findUserPermissionNames(username);
         info.setStringPermissions(perNames);
         return info;
     }
+
 
     /**
      * 获取登录验证
@@ -75,17 +68,8 @@ public class UserRealm extends AuthorizingRealm {
         User user = userService.findUser(username);
         logger.debug("登录的密码"+password);
         if (user != null) {
-            logger.debug("进入这里了！");
-            String salt = user.getSalt();
-            String encodePassword = new Md5Hash(password,user.getSalt()).toString();
-            logger.debug(encodePassword);
-            if (user.getPassword().equals(encodePassword)) {
-                logger.debug("验证正确");
-                SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username, password, getName());
-                String passwordAgain = info.getCredentials().toString();
-                logger.debug("相等？:"+String.valueOf(encodePassword.equals(passwordAgain)));
-                return info;
-            }
+            SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username, password, getName());
+            return info;//return了info其实内部还会有验证
         }
         return null;
     }
