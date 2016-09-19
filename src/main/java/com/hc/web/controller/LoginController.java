@@ -57,14 +57,14 @@ public class LoginController {
     public String loginStudent(@RequestParam("username") String username,
                                @RequestParam("password") String password,
                                Model model) {
+        long startTime = System.currentTimeMillis();
         Subject subject = SecurityUtils.getSubject();
         logger.debug("在Controller获得的密码:"+password);
         AuthenticationToken token = new UsernamePasswordToken(username, password);
         try {
             logger.debug(token.getCredentials().toString());
             subject.login(token);
-            subject.getSession(true).setAttribute("username",subject.getPrincipal().toString());
-            subject.isAuthenticated();
+            logger.debug("启动用时："+(System.currentTimeMillis() - startTime));
             return "redirect:/admin/student";
         } catch (AuthenticationException e) {
             logger.error(e);

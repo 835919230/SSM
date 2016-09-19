@@ -2,52 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9736df0d-9d97-46b4-808d-5baac4dc29be" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_1_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/lib/spring-security-core-4.1.3.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/lib/spring-security-web-4.1.3.RELEASE.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/dao/PermissionDao.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/dao/PermissionDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/dao/RoleDao.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/dao/RoleDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/realm/UserRealm.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/realm/UserRealm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/service/UserService.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_0.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/web/Bootstrap.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/web/Bootstrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/web/RootConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/web/RootConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/hc/web/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/hc/web/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/dao/PermissionDao.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/dao/PermissionDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/dao/RoleDao.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/dao/RoleDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/realm/UserRealm.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/realm/UserRealm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/service/UserService.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/Bootstrap.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/Bootstrap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/RootConfig.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/RootConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/com/hc/web/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/hc/dao/PermissionDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/hc/dao/PermissionDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/hc/dao/RoleDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/hc/dao/RoleDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/hc/service/impl/UserServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/hc/service/impl/UserServiceImplTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SSM_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SSM_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSM.iml" afterPath="$PROJECT_DIR$/SSM.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/dao/PermissionDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/dao/PermissionDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/dao/RoleDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/dao/RoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/realm/UserRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/realm/UserRealm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/web/ShiroConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/web/ShiroConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hc/web/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hc/web/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/PermissionDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PermissionDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoleDao.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hc/dao/PermissionDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hc/dao/PermissionDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hc/dao/RoleDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hc/dao/RoleDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/hc/service/impl/UserServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/hc/service/impl/UserServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/PermissionDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/PermissionDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/RoleDao.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/RoleDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/mapper/PermissionDao.xml" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/mapper/PermissionDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/mapper/RoleDao.xml" afterPath="$PROJECT_DIR$/target/ssm-1.0-SNAPSHOT/WEB-INF/classes/mapper/RoleDao.xml" />
     </list>
     <ignored path="SSM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,85 +46,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="MatchStrength.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/format/MatchStrength.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="-31">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java">
+      <file leaf-file-name="ShiroFilterFactoryBean.java" pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.3.1/shiro-spring-1.3.1-sources.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-860">
-              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            <state relative-caret-position="-3947">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/service/impl/UserServiceImplTest.java">
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/dao/UserDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+            <state relative-caret-position="152">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShiroConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/ShiroConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRealm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRealm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/realm/UserRealm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/RoleDao.java">
+      <file leaf-file-name="TokenFilter.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/filter/TokenFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="-4984">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/service/UserService.java">
+      <file leaf-file-name="TreeNode.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="-159">
+              <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PermissionDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/PermissionDao.java">
+      <file leaf-file-name="JsonFactory.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/JsonFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="525">
+              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -185,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show.jsp" />
@@ -206,7 +162,6 @@
         <option value="dbtable:/974533ad/b4b69dad-cc3d-4567-a4a3-a19b7ac48c03/shiro.sys_permissions" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/model/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hc/model/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/resources/tmp.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/student/student.jsp" />
@@ -221,10 +176,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hc/web/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/web/SecurityWebInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hc/web/Bootstrap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/web/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hc/web/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/dao/PermissionDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/PermissionDao.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/hc/dao/PermissionDaoTest.java" />
@@ -233,9 +185,14 @@
         <option value="$PROJECT_DIR$/src/test/java/com/hc/dao/RoleDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/hc/service/impl/UserServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hc/realm/UserRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hc/web/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hc/web/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hc/model/Permission.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/hc/NormalTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -267,7 +224,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -314,6 +271,124 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.shiro:shiro-spring:1.3.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shiro-spring-1.3.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.shiro:shiro-spring:1.3.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shiro-spring-1.3.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.shiro:shiro-spring:1.3.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shiro-spring-1.3.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.shiro:shiro-spring:1.3.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shiro-spring-1.3.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="remoting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: org.apache.shiro:shiro-spring:1.3.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shiro-spring-1.3.1.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SSM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -333,6 +408,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter6" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,54 +533,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -511,78 +568,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SSM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -676,6 +661,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SSM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -688,9 +687,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestMaven/testmaven/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shiro-example/shiro-example-chapter6/pom.xml" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="SearchEverywhereHistoryKey" value="DelegatingFilterProxy&#9;FILE&#9;jar://C:/Users/诚/.m2/repository/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java&#10;IniShiroFil&#9;PSI&#9;JAVA://org.apache.shiro.web.servlet.IniShiroFilter&#10;EqualsBui&#9;PSI&#9;JAVA://org.apache.commons.lang3.builder.EqualsBuilder" />
+    <property name="SearchEverywhereHistoryKey" value="Simple&#9;FILE&#9;jar://C:/Users/诚/.m2/repository/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/simple/SimpleJdbcInsert.java&#10;SimpleJdb&#9;PSI&#9;JAVA://org.springframework.jdbc.core.simple.SimpleJdbcInsert&#10;BasicDataSource&#9;PSI&#9;JAVA://org.apache.commons.dbcp2.BasicDataSource&#10;Filter&#9;PSI&#9;JAVA://javax.servlet.Filter&#10;DelegatingFilterProxy&#9;FILE&#9;jar://C:/Users/诚/.m2/repository/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java&#10;IniShiroFil&#9;PSI&#9;JAVA://org.apache.shiro.web.servlet.IniShiroFilter&#10;EqualsBui&#9;PSI&#9;JAVA://org.apache.commons.lang3.builder.EqualsBuilder" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -717,85 +716,7 @@
       <recent name="D:\IdeaProject\SSM\src\main\webapp\WEB-INF\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration default="false" name="UserDaoTest.updatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hc.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hc.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.hc.dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="updatePassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PermissionDaoTest.findPermissionNameByUserId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hc.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hc.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.hc.dao.PermissionDaoTest" />
-      <option name="METHOD_NAME" value="findPermissionNameByUserId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RoleDaoTest.listRoleName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hc.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hc.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.hc.dao.RoleDaoTest" />
-      <option name="METHOD_NAME" value="listRoleName" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserDaoTest.findByUsername">
     <configuration default="false" name="UserServiceImplTest.findUserRoleNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -835,6 +756,84 @@
       <option name="PACKAGE_NAME" value="com.hc.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.hc.service.impl.UserServiceImplTest" />
       <option name="METHOD_NAME" value="findUserPermissionNames" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="NormalTest.testElapsed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hc" />
+      <option name="MAIN_CLASS_NAME" value="com.hc.NormalTest" />
+      <option name="METHOD_NAME" value="testElapsed" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="NormalTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hc" />
+      <option name="MAIN_CLASS_NAME" value="com.hc.NormalTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserDaoTest.findByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hc.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hc.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.hc.dao.UserDaoTest" />
+      <option name="METHOD_NAME" value="findByUsername" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1497,19 +1496,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserDaoTest.updatePassword" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.PermissionDaoTest.findPermissionNameByUserId" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RoleDaoTest.listRoleName" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserRoleNames" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserPermissionNames" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserRoleNames" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserPermissionNames" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.NormalTest.testElapsed" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.NormalTest.test" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findByUsername" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserPermissionNames" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserRoleNames" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RoleDaoTest.listRoleName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PermissionDaoTest.findPermissionNameByUserId" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest.updatePassword" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserDaoTest.findByUsername" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.NormalTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.NormalTest.testElapsed" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserPermissionNames" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest.findUserRoleNames" />
       </list>
     </recent_temporary>
   </component>
@@ -1541,44 +1540,46 @@
       <workItem from="1474034927203" duration="9843000" />
       <workItem from="1474097047195" duration="28321000" />
       <workItem from="1474188820264" duration="372000" />
-      <workItem from="1474189279181" duration="1771000" />
+      <workItem from="1474189279181" duration="1895000" />
+      <workItem from="1474191265827" duration="6590000" />
+      <workItem from="1474255647123" duration="5078000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PermissionDaoTest_findPermissionNameByUserId - 2016.09.18 at 17h 07m 53s.xml">
-      <configuration name="PermissionDaoTest.findPermissionNameByUserId" configurationId="JUnit" />
+    <history-entry file="NormalTest_test - 2016.09.18 at 23h 04m 12s.xml">
+      <configuration name="NormalTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PermissionDaoTest_findPermissionNameByUserId - 2016.09.18 at 17h 16m 27s.xml">
-      <configuration name="PermissionDaoTest.findPermissionNameByUserId" configurationId="JUnit" />
+    <history-entry file="NormalTest_test - 2016.09.18 at 23h 07m 34s.xml">
+      <configuration name="NormalTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RoleDaoTest_listRoleName - 2016.09.18 at 17h 17m 14s.xml">
-      <configuration name="RoleDaoTest.listRoleName" configurationId="JUnit" />
+    <history-entry file="NormalTest_test - 2016.09.18 at 23h 08m 45s.xml">
+      <configuration name="NormalTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserPermissionNames - 2016.09.18 at 17h 25m 33s.xml">
-      <configuration name="UserServiceImplTest.findUserPermissionNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_test - 2016.09.18 at 23h 11m 35s.xml">
+      <configuration name="NormalTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoleNames - 2016.09.18 at 17h 23m 05s.xml">
-      <configuration name="UserServiceImplTest.findUserRoleNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_test - 2016.09.18 at 23h 12m 42s.xml">
+      <configuration name="NormalTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoleNames - 2016.09.18 at 17h 23m 38s.xml">
-      <configuration name="UserServiceImplTest.findUserRoleNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_testElapsed - 2016.09.18 at 23h 09m 47s.xml">
+      <configuration name="NormalTest.testElapsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoleNames - 2016.09.18 at 17h 24m 18s.xml">
-      <configuration name="UserServiceImplTest.findUserRoleNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_testElapsed - 2016.09.18 at 23h 10m 00s.xml">
+      <configuration name="NormalTest.testElapsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoleNames - 2016.09.18 at 17h 24m 44s.xml">
-      <configuration name="UserServiceImplTest.findUserRoleNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_testElapsed - 2016.09.18 at 23h 10m 11s.xml">
+      <configuration name="NormalTest.testElapsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoleNames - 2016.09.18 at 17h 25m 10s.xml">
-      <configuration name="UserServiceImplTest.findUserRoleNames" configurationId="JUnit" />
+    <history-entry file="NormalTest_testElapsed - 2016.09.18 at 23h 10m 22s.xml">
+      <configuration name="NormalTest.testElapsed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceImplTest_findUserRoles - 2016.09.17 at 21h 50m 12s.xml">
-      <configuration name="UserServiceImplTest.findUserRoles" configurationId="JUnit" />
+    <history-entry file="UserDaoTest_findByUsername - 2016.09.19 at 22h 16m 51s.xml">
+      <configuration name="UserDaoTest.findByUsername" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90163000" />
+    <option name="totallyTimeSpent" value="101955000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1590,32 +1591,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611832" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4852768" sideWeight="0.50695014" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756132" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869992" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3340564" sideWeight="0.4930499" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3329718" sideWeight="0.4930499" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756132" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32611832" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24839744" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18710022" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26226014" sideWeight="0.5056543" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.318872" sideWeight="0.49550286" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31751412" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3953824" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1625,6 +1626,39 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28416485" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4852768" sideWeight="0.50695014" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869992" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.318872" sideWeight="0.49550286" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39587852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253796" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44444445" sideWeight="0.4930499" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28416485" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25733137" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26226014" sideWeight="0.5056543" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1637,6 +1671,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="5" />
@@ -1648,433 +1685,460 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <marker date="1474130066114" expanded="true" signature="463:525" ph="SELECT FROM sys_users" />
-            <marker date="1474130066114" expanded="true" signature="646:720" ph="SELECT FROM sys_users" />
-            <marker date="1474130066114" expanded="true" signature="1008:1068" ph="UPDATE sys_u... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/crypto/hash/Md5Hash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/974533ad/b4b69dad-cc3d-4567-a4a3-a19b7ac48c03/shiro.sys_users">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/dao/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="74" column="15" selection-start-line="74" selection-start-column="15" selection-end-line="74" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE-sources.jar!/org/springframework/context/annotation/Bean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-669">
-          <caret line="189" column="18" selection-start-line="189" selection-start-column="18" selection-end-line="189" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/shiro/samples/samples-spring-client/1.3.1/samples-spring-client-1.3.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1638">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/SecurityWebInitializer.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.1/shiro-web-1.3.1-sources.jar!/org/apache/shiro/web/servlet/AbstractShiroFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.1/shiro-web-1.3.1-sources.jar!/org/apache/shiro/web/servlet/ShiroFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="61" column="44" selection-start-line="61" selection-start-column="44" selection-end-line="61" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.3.1/shiro-web-1.3.1-sources.jar!/org/apache/shiro/web/servlet/IniShiroFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="106" column="58" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE-sources.jar!/org/springframework/ui/ModelMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.2.RELEASE/spring-webmvc-4.3.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/support/RedirectAttributesModelMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE-sources.jar!/org/springframework/ui/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.2.RELEASE/spring-web-4.3.2.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="188" column="7" selection-start-line="188" selection-start-column="7" selection-end-line="188" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/realm/AuthenticatingRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1516">
-          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/realm/AuthorizingRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3235">
-          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/mgt/SecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2599">
-          <caret line="275" column="27" selection-start-line="275" selection-start-column="27" selection-end-line="275" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/subject/support/DelegatingSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/subject/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="346" column="12" selection-start-line="346" selection-start-column="12" selection-end-line="346" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/SecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/empi.log">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/show.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.1/shiro-core-1.3.1-sources.jar!/org/apache/shiro/util/ThreadContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/model/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/app/jdk/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="66" column="38" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="418">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#425#426#0" expanded="false" />
+            <element signature="e#450#451#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+            <element signature="e#702#703#0" expanded="false" />
+            <element signature="e#740#741#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#828#829#0" expanded="false" />
+            <element signature="e#874#875#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="false" />
+            <element signature="e#942#943#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1035#1036#0" expanded="false" />
+            <element signature="e#1081#1082#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://D:/app/jdk/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28052">
+          <caret line="312" column="22" selection-start-line="312" selection-start-column="22" selection-end-line="312" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/text/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/util/TimeZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="132" column="22" selection-start-line="132" selection-start-column="22" selection-end-line="132" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2912">
+          <caret line="449" column="32" selection-start-line="449" selection-start-column="32" selection-end-line="449" selection-end-column="32" />
+          <folding>
+            <element signature="e#10720#10721#0" expanded="false" />
+            <element signature="e#10750#10751#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/text/DateFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
-          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
+          <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/controller/AdminController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1-sources.jar!/org/apache/commons/dbcp2/BasicDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="-31992">
+          <caret line="342" column="23" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PermissionDao.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/NormalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        <state relative-caret-position="470">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
-            <marker date="1474189661815" expanded="true" signature="325:708" ph="SELECT sys_p... sys_permissions" />
-            <marker date="1474189661815" expanded="true" signature="839:1411" ph="SELECT sys_p... sys_permissions" />
-            <marker date="1474189661815" expanded="true" signature="1085:1410" ph="SELECT sys_r... sys_users_roles" />
-            <marker date="1474189661815" expanded="true" signature="1541:1929" ph="SELECT sys_p... sys_permissions" />
-            <marker date="1474189661815" expanded="true" signature="1669:1928" ph="SELECT sys_r... sys_users_roles" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://SpringLocalModels/module=SSM">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>SpringLocalModels</ID>
-          <OriginalElement>module=SSM</OriginalElement>
-          <nodes>
-            <node x="" y="">module=SSM</node>
-            <node x="" y="">fileset=SSM/MVC dispatcher initializer servlet context</node>
-            <node x="" y="">com.hc.web.ServletConfig</node>
-            <node x="" y="">com.hc.web.RootConfig</node>
-            <node x="" y="">com.hc.web.ShiroConfig</node>
-            <node x="" y="">org.springframework.context.annotation.EnableAspectJAutoProxy</node>
-            <node x="" y="">org.springframework.transaction.annotation.EnableTransactionManagement</node>
-            <node x="" y="">org.springframework.web.servlet.config.annotation.EnableWebMvc</node>
-            <node x="" y="">fileset=SSM/MVC dispatcher initializer root context</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="429.0" y="104.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Show filesets as groups</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/dao/PermissionDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <marker date="1474190163842" expanded="true" signature="307:393" ph="SELECT * FRO... sys_roles" />
-            <marker date="1474190163842" expanded="true" signature="514:608" ph="SELECT * FRO... sys_roles" />
-            <marker date="1474190163842" expanded="true" signature="721:1045" ph="SELECT sys_r... sys_roles" />
-            <marker date="1474190163842" expanded="true" signature="1161:1339" ph="SELECT sys_r... sys_roles" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar!/org/springframework/cglib/core/ClassEmitter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE.jar!/org/springframework/cglib/core/Block.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE-sources.jar!/org/springframework/cglib/SpringCglibInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/dao/RoleDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.2.RELEASE/spring-core-4.3.2.RELEASE-sources.jar!/org/springframework/core/MethodClassKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#2531#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/RoleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/PermissionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/service/impl/UserServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.3.1/shiro-spring-1.3.1.jar!/org/apache/shiro/spring/LifecycleBeanPostProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.3.1/shiro-spring-1.3.1-sources.jar!/org/apache/shiro/spring/LifecycleBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1590">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
+        <state relative-caret-position="665">
           <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="false" />
+            <element signature="e#1858#1859#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/RootConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="147" column="84" selection-start-line="147" selection-start-column="84" selection-end-line="147" selection-end-column="84" />
+          <folding>
+            <element signature="e#5447#5474#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/metadata/TableMetaDataContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="287" column="20" selection-start-line="287" selection-start-column="20" selection-end-line="287" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/PreparedStatementSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar!/com/mysql/jdbc/jdbc2/optional/PreparedStatementWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="368" column="16" selection-start-line="368" selection-start-column="16" selection-end-line="368" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38-sources.jar!/com/mysql/jdbc/jdbc2/optional/PreparedStatementWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="522" column="60" selection-start-line="522" selection-start-column="60" selection-end-line="522" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18.jar!/com/alibaba/druid/proxy/jdbc/PreparedStatementProxyImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="407" column="16" selection-start-line="407" selection-start-column="16" selection-end-line="407" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/StatementCreatorUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="329" column="21" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/web/ServletConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/simple/SimpleJdbcInsert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+          <folding>
+            <element signature="e#3950#3951#0" expanded="false" />
+            <element signature="e#3979#3980#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/ArgumentTypePreparedStatementSetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/simple/AbstractJdbcInsert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="361" column="37" selection-start-line="361" selection-start-column="37" selection-end-line="361" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="626" column="30" selection-start-line="626" selection-start-column="30" selection-end-line="626" selection-end-column="30" />
+          <folding>
+            <element signature="e#30982#31485#0" expanded="false" />
+            <element signature="e#31484#31485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18.jar!/com/alibaba/druid/pool/PreparedStatementHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="439" column="16" selection-start-line="439" selection-start-column="16" selection-end-line="439" selection-end-column="16" />
+          <folding>
+            <element signature="e#17473#17474#0" expanded="true" />
+            <element signature="e#17534#17535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18.jar!/com/alibaba/druid/pool/DruidPooledConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="387" column="45" selection-start-line="387" selection-start-column="29" selection-end-line="387" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18-sources.jar!/com/alibaba/druid/pool/PreparedStatementHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18-sources.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3543">
+          <caret line="1600" column="37" selection-start-line="1600" selection-start-column="17" selection-end-line="1600" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1299">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18-sources.jar!/com/alibaba/druid/pool/DruidPooledPreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16981">
+          <caret line="47" column="93" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18-sources.jar!/com/alibaba/druid/pool/DruidConnectionHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="170" column="28" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
+          <folding>
+            <element signature="e#6788#6789#0" expanded="false" />
+            <element signature="e#6828#6829#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/PreparedStatementCreatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.2.RELEASE/spring-jdbc-4.3.2.RELEASE-sources.jar!/org/springframework/jdbc/core/PreparedStatementCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.18/druid-1.0.18-sources.jar!/com/alibaba/druid/pool/DruidPooledConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="477" column="20" selection-start-line="477" selection-start-column="20" selection-end-line="477" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/app/jdk/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="1035" column="22" selection-start-line="1035" selection-start-column="22" selection-end-line="1035" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.3/fastjson-1.2.3.jar!/com/alibaba/fastjson/asm/ClassWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.3/fastjson-1.2.3-sources.jar!/com/alibaba/fastjson/asm/ClassWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2.jar!/com/fasterxml/jackson/core/JsonParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/JsonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31280">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#66662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.3/fastjson-1.2.3-sources.jar!/com/alibaba/fastjson/support/spring/FastJsonJsonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/filter/TokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4984">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="171" column="7" selection-start-line="171" selection-start-column="7" selection-end-line="171" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/JsonFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/realm/UserRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE-sources.jar!/org/springframework/test/context/ContextConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/hc/dao/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hc/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="176" column="11" selection-start-line="176" selection-start-column="11" selection-end-line="176" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.2/jackson-core-2.8.2-sources.jar!/com/fasterxml/jackson/core/format/MatchStrength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-spring/1.3.1/shiro-spring-1.3.1-sources.jar!/org/apache/shiro/spring/web/ShiroFilterFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3947">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

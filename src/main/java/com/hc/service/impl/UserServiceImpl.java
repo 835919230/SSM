@@ -33,7 +33,7 @@ public class UserServiceImpl implements UserService {
     @Transactional(readOnly = true)
     public User findUser(String username) {
         if (username == null || "".equals(username))
-            return null;
+            return new User();
         User user = userDao.findByUsername(username);
         return user;
     }
